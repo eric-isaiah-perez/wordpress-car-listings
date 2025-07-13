@@ -1,0 +1,22 @@
+{
+  "name": "twentytwentyfour-child",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/style.css"
+  },
+  "keywords": [],
+  "author": "Eric Isaiah Perez",
+  "license": "ISC",
+  "description": "Child theme using Tailwind CSS for a WordPress car listings page technical test.",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "lightbox2": "^2.11.5",
+    "owl.carousel": "^2.3.4"
+  }
+}
