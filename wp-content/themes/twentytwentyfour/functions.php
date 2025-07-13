@@ -204,3 +204,11 @@ if ( ! function_exists( 'twentytwentyfour_pattern_categories' ) ) :
 endif;
 
 add_action( 'init', 'twentytwentyfour_pattern_categories' );
+
+// redirect other pages to car-listings
+add_action('template_redirect', function () {
+	if (!is_page('car-listings')) {
+		wp_redirect(home_url('/car-listings'), 301);
+		exit;
+	}
+});
