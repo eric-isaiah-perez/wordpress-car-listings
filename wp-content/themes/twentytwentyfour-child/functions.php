@@ -49,4 +49,13 @@ add_action( 'wp_enqueue_scripts', function () {
         null,
         true
     );
+
+    // Add Menus in Appearance
+    add_action('after_setup_theme', function () {
+        remove_theme_support('block-templates');
+        add_theme_support('menus');
+        register_nav_menus([
+            'primary' => __('Primary Menu', 'twentytwentyfour-child'),
+        ]);
+    });
 });
