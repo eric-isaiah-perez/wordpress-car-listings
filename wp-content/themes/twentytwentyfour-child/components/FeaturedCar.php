@@ -11,7 +11,7 @@ if ($featured_car):
     ?>
     <section class="featured-car bg-gray-100 py-8">
         <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-6">Featured Car</h2>
+            <h2 class="text-3xl mb-6">Featured Car</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded shadow">
                 <div class="aspect-video bg-cover bg-center rounded" style="background-image: url('<?php echo esc_url($main_photo); ?>');"></div>
                 <div>
@@ -23,9 +23,9 @@ if ($featured_car):
                         <?php if ($on_sale): ?>
                             <span class="text-sm bg-red-500 text-white px-2 py-1 rounded mr-2">SALE</span>
                             <del class="text-gray-700">₱<?php echo number_format($price); ?></del>
-                            <span class="font-bold text-lg ml-2">₱<?php echo number_format($sale_price); ?></span>
+                            <span class="text-lg ml-2">₱<?php echo number_format($sale_price); ?></span>
                         <?php else: ?>
-                            <span class="text-gray-700 font-bold text-lg">₱<?php echo number_format($price); ?></span>
+                            <span class="text-gray-700 text-lg">₱<?php echo number_format($price); ?></span>
                         <?php endif; ?>
                     </p>
                     <a class = "text-red-500 hover:opacity-50 transition-opacity duration-200" href="#">

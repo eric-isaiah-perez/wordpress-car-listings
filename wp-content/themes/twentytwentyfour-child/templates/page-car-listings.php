@@ -17,6 +17,9 @@ get_header();
         <!-- Latest Cars -->
          <?php get_template_part('components/LatestCars'); ?>
 
+         <!-- Car Listings -->
+         <?php get_template_part('components/CarListings'); ?>
+
 </main>
 
 <?php
