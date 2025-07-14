@@ -8,7 +8,7 @@ $latest_cars = get_posts([
 
 if ($latest_cars): ?>
     <section class="latest-cars py-12">
-        <div class="max-w-5xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl mb-6">Latest Cars</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <?php 

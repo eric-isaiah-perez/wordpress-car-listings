@@ -8,8 +8,8 @@ $cars = get_posts([
 
 if ($cars): ?>
 <section class="car-listings py-12">
-    <div class="max-w-5xl mx-auto px-4">
-        <h2 class="text-3xl mb-6">Car Listings</h2>
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl mb-6">Explore Our Car Listings</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <?php 
                 foreach ($cars as $post): setup_postdata($post);

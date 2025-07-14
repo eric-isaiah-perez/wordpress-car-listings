@@ -8,9 +8,9 @@
     </div>
     <div class="p-4">
         <h3 class="text-lg"><?php echo esc_html(get_the_title()); ?></h3>
-        <p class="text-gray-700 text-sm">Model: <?php the_field('car_model'); ?></p>
-        <p class="text-gray-700 text-sm">Engine: <?php the_field('engine_size'); ?></p>
-        <p class="mt-2 text-gray-700 text-sm">
+        <p class="text-gray-700">Model: <?php the_field('car_model'); ?></p>
+        <p class="text-gray-700">Engine: <?php the_field('engine_size'); ?></p>
+        <p class="mt-2 text-gray-700">
             <?php if (get_field('on_sale')): ?>
                 <del class="text-gray-400">₱<?php echo number_format(get_field('price')); ?></del>
                 <span class="ml-2">₱<?php echo number_format(get_field('sale_price')); ?></span>
@@ -18,7 +18,7 @@
                 ₱<?php echo number_format(get_field('price')); ?>
             <?php endif; ?>
         </p>
-        <p class = "text-red-500 hover:opacity-50 transition-opacity duration-200 text-xs mt-4">
+        <p class = "text-red-500 hover:opacity-50 transition-opacity duration-200 text-sm mt-4">
             More Info <i class="fas fa-arrow-right mt-1"></i>
         </p>
     </div>

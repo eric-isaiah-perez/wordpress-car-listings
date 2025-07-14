@@ -10,7 +10,7 @@ if ($featured_car):
     $main_photo = get_the_post_thumbnail_url($featured_car->ID, 'large');
     ?>
     <section class="featured-car bg-gray-100 py-8">
-        <div class="max-w-5xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl mb-6">Featured Car</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white p-6 rounded shadow">
                 <div class="aspect-video bg-cover bg-center rounded" style="background-image: url('<?php echo esc_url($main_photo); ?>');"></div>
