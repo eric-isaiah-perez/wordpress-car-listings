@@ -2,7 +2,7 @@
 $car_posts = get_field('hero_banners_cars_po');
 
 if ($car_posts): ?>
-<div class="hero owl-carousel owl-theme">
+<div class="hero owl-carousel owl-theme bg-gray-100">
 	<?php foreach ($car_posts as $post): setup_postdata($post); ?>
 		<?php
 			$image = get_the_post_thumbnail_url($post->ID, 'large');

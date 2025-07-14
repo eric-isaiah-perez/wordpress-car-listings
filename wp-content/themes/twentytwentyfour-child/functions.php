@@ -60,13 +60,21 @@ add_action( 'wp_enqueue_scripts', function () {
         filemtime($theme_dir . '/assets/css/custom-stylesheet.css')
     );
 
-    // Add Menus in Appearance
-    add_action('after_setup_theme', function () {
-        remove_theme_support('block-templates');
-        add_theme_support('menus');
-        register_nav_menus([
-            'primary' => __('Primary Menu', 'twentytwentyfour-child'),
-        ]);
-    });
+});
 
+// Add Menus in Appearance
+add_action('after_setup_theme', function () {
+    remove_theme_support('block-templates');
+    add_theme_support('menus');
+    register_nav_menus([
+        'primary' => __('Primary Menu', 'twentytwentyfour-child'),
+    ]);
+});
+
+// Redirect other pages to car-listings
+add_action('template_redirect', function () {
+	if (!is_page('car-listings')) {
+		wp_redirect(home_url('/car-listings'), 301);
+		exit;
+	}
 });

@@ -50,14 +50,14 @@ p, a, li, div, span, del {
     pointer-events: none;
 }
 
-.hero .owl-dots {
+.hero .owl-dots, .car-modal .owl-dots {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: -1.5rem;
+  transform: translateY(-1.5rem);
 }
 
-.hero .owl-dot {
+.hero .owl-dot, .car-modal .owl-dot {
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -66,12 +66,12 @@ p, a, li, div, span, del {
   opacity: .7;
 }
 
-.hero .owl-dot:hover {
+.hero .owl-dot:hover, .car-modal .owl-dot:hover {
   background: #9ca3af !important;
   transform: scale(1.1);
 }
 
-.hero .owl-dot.active {
+.hero .owl-dot.active, .car-modal .owl-dot.active {
   background: #ef4444 !important;
   transform: scale(1.2);
   opacity: 1;
@@ -92,4 +92,38 @@ p, a, li, div, span, del {
     .hero .carousel-item {
         height: 40vh;
     }
+}
+
+/* Car Modal */
+
+.car-tile {
+  cursor: pointer;
+}
+
+.car-modal {
+  background: rgba(0,0,0,.8);
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-modal .content-wrapper {
+  max-width: 650px;
+}
+
+.car-modal .on-sale {
+  width: 100%;
+  max-width: 3rem;
+}
+
+.car-modal .modal-close {
+  margin-left: 98%;
 }
