@@ -7,7 +7,7 @@ if ($featured_car):
     $price = get_field('price', $featured_car->ID);
     $on_sale = get_field('on_sale', $featured_car->ID);
     $sale_price = get_field('sale_price', $featured_car->ID);
-    $main_photo = get_field('main_photo', $featured_car->ID) ?: get_the_post_thumbnail_url($featured_car->ID, 'large');
+    $main_photo = get_the_post_thumbnail_url($featured_car->ID, 'large');
     ?>
     <section class="featured-car bg-gray-100 py-8">
         <div class="max-w-5xl mx-auto px-4">

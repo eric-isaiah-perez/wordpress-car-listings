@@ -35,21 +35,6 @@ add_action( 'wp_enqueue_scripts', function () {
         true
     );
 
-    // Lightbox2 CSS
-    wp_enqueue_style(
-        'lightbox2',
-        $theme_uri . '/node_modules/lightbox2/dist/css/lightbox.min.css'
-    );
-
-    // Lightbox2 JS
-    wp_enqueue_script(
-        'lightbox2',
-        $theme_uri . '/node_modules/lightbox2/dist/js/lightbox.min.js',
-        [],
-        null,
-        true
-    );
-
     // Font Awesome
     wp_enqueue_style(
         'font-awesome',
