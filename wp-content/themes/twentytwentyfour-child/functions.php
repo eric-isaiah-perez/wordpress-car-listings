@@ -50,6 +50,31 @@ add_action( 'wp_enqueue_scripts', function () {
         true
     );
 
+    // Font Awesome
+    wp_enqueue_style(
+        'font-awesome',
+        $theme_uri . '/node_modules/@fortawesome/fontawesome-free/css/all.min.css',
+        [],
+        null
+    );
+
+    // Custom JS Scripts
+    wp_enqueue_script(
+        'child-script',
+        $theme_uri . '/assets/js/custom-scripts.js',
+        ['jquery', 'owl-carousel'],
+        filemtime($theme_dir . '/assets/js/custom-scripts.js'),
+        true
+    );
+
+    // Custom CSS Stylesheet
+    wp_enqueue_style(
+        'child-custom-style',
+        $theme_uri . '/assets/css/custom-stylesheet.css',
+        ['child-style'],
+        filemtime($theme_dir . '/assets/css/custom-stylesheet.css')
+    );
+
     // Add Menus in Appearance
     add_action('after_setup_theme', function () {
         remove_theme_support('block-templates');
@@ -58,4 +83,5 @@ add_action( 'wp_enqueue_scripts', function () {
             'primary' => __('Primary Menu', 'twentytwentyfour-child'),
         ]);
     });
+
 });

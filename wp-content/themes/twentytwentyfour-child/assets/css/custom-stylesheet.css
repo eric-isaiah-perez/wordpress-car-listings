@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Oswald-Bold';
+  src: url(../fonts/oswald/Oswald-Bold.eot);
+  src: url(../fonts/oswald/Oswald-Bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/oswald/Oswald-Bold.otf) format('otf'),
+       url(../fonts/oswald/Oswald-Bold.woff) format('woff'),
+       url(../fonts/oswald/Oswald-Bold.woff2) format('woff2'),
+       url(../fonts/oswald/Oswald-Bold.ttf) format('truetype'),
+       url(../fonts/Oswald-Bold.svg#Oswald-Bold) format('svg');
+}
+
+@font-face {
+  font-family: 'Abel-Regular';
+  src: url(../fonts/abel/Abel-Regular.eot);
+  src: url(../fonts/abel/Abel-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/abel/Abel-Regular.otf) format('otf'),
+       url(../fonts/abel/Abel-Regular.woff) format('woff'),
+       url(../fonts/abel/Abel-Regular.woff2) format('woff2'),
+       url(../fonts/abel/Abel-Regular.ttf) format('truetype'),
+       url(../fonts/abel/Abel-Regular.svg#Abel-Regular) format('svg');
+}
+
+
+/* Global Styling */
+
+h1, h2, h3, h4, h5, h6, .site-title {
+    font-family: 'Oswald-Bold';
+}
+
+p, a, li, div, span, del {
+    font-family: 'Abel-Regular';
+}
+
+/* HeroCarousel */
+
+.hero .carousel-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+}
+
+.hero .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero .owl-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.hero .owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #d1d5db !important;
+  border: none;
+  opacity: .7;
+}
+
+.hero .owl-dot:hover {
+  background: #9ca3af !important;
+  transform: scale(1.1);
+}
+
+.hero .owl-dot.active {
+  background: #ef4444 !important;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.hero .content-wrapper {
+    z-index: 2;
+    position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero .carousel-item {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero .carousel-item {
+        height: 40vh;
+    }
+}

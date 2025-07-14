@@ -10,7 +10,7 @@
 <header class="bg-gray-100 shadow-sm">
     <div class="mx-auto px-4 py-4 flex flex-col md:flex-row justify-between md:items-center gap-4">
         <!-- Site Title -->
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="text-lg font-bold block md:w-auto w-full">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-title text-xl block md:w-auto w-full">
             <?php bloginfo('name'); ?>
         </a>
 
@@ -19,7 +19,7 @@
             <?php
             wp_nav_menu([
                 'theme_location' => 'primary',
-                'menu_class'     => 'flex flex-col md:flex-row gap-2 md:gap-6 text-sm font-medium text-gray-700',
+                'menu_class'     => 'flex flex-col md:flex-row gap-2 md:gap-6 text-md text-gray-700',
                 'container'      => false,
                 'fallback_cb'    => false,
             ]);
