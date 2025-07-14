@@ -19,9 +19,7 @@
             <?php
             wp_nav_menu([
                 'theme_location' => 'primary',
-                'menu_class'     => 'flex flex-col md:flex-row gap-2 md:gap-6 text-md text-gray-700',
-                'container'      => false,
-                'fallback_cb'    => false,
+                'menu_class' => 'flex flex-col md:flex-row gap-2 md:gap-6 text-md text-gray-700',
             ]);
             ?>
         </nav>

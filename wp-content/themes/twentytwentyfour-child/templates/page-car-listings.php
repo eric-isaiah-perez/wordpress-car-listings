@@ -14,6 +14,9 @@ get_header();
         <!-- Featured Car -->
         <?php get_template_part('components/FeaturedCar'); ?>
 
+        <!-- Latest Cars -->
+         <?php get_template_part('components/LatestCars'); ?>
+
 </main>
 
 <?php

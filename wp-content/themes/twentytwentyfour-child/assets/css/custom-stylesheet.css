@@ -1,23 +1,23 @@
 @font-face {
   font-family: 'Oswald-Bold';
   src: url(../fonts/oswald/Oswald-Bold.eot);
-  src: url(../fonts/oswald/Oswald-Bold.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/oswald/Oswald-Bold.otf) format('otf'),
-       url(../fonts/oswald/Oswald-Bold.woff) format('woff'),
-       url(../fonts/oswald/Oswald-Bold.woff2) format('woff2'),
-       url(../fonts/oswald/Oswald-Bold.ttf) format('truetype'),
-       url(../fonts/Oswald-Bold.svg#Oswald-Bold) format('svg');
+  src: url(../fonts/oswald/Oswald-Bold.eot?#iefix) format('embedded-opentype'), '
+    url(../fonts/oswald/Oswald-Bold.otf) format('otf'),
+    url(../fonts/oswald/Oswald-Bold.woff) format('woff'),
+    url(../fonts/oswald/Oswald-Bold.woff2) format('woff2'),
+    url(../fonts/oswald/Oswald-Bold.ttf) format('truetype'),
+    url(../fonts/Oswald-Bold.svg#Oswald-Bold) format('svg');
 }
 
 @font-face {
   font-family: 'Abel-Regular';
   src: url(../fonts/abel/Abel-Regular.eot);
   src: url(../fonts/abel/Abel-Regular.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/abel/Abel-Regular.otf) format('otf'),
-       url(../fonts/abel/Abel-Regular.woff) format('woff'),
-       url(../fonts/abel/Abel-Regular.woff2) format('woff2'),
-       url(../fonts/abel/Abel-Regular.ttf) format('truetype'),
-       url(../fonts/abel/Abel-Regular.svg#Abel-Regular) format('svg');
+    url(../fonts/abel/Abel-Regular.otf) format('otf'),
+    url(../fonts/abel/Abel-Regular.woff) format('woff'),
+    url(../fonts/abel/Abel-Regular.woff2) format('woff2'),
+    url(../fonts/abel/Abel-Regular.ttf) format('truetype'),
+    url(../fonts/abel/Abel-Regular.svg#Abel-Regular) format('svg');
 }
 
 

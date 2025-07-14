@@ -1,14 +1,13 @@
 <?php
-// Get the featured car from the current page's ACF field
 $featured_car = get_field('featured_car_po');
 
 if ($featured_car):
-    $model        = get_field('car_model', $featured_car->ID);
-    $engine       = get_field('engine_size', $featured_car->ID);
-    $price        = get_field('price', $featured_car->ID);
-    $on_sale      = get_field('on_sale', $featured_car->ID);
-    $sale_price   = get_field('sale_price', $featured_car->ID);
-    $main_photo   = get_field('main_photo', $featured_car->ID) ?: get_the_post_thumbnail_url($featured_car->ID, 'large');
+    $model = get_field('car_model', $featured_car->ID);
+    $engine = get_field('engine_size', $featured_car->ID);
+    $price = get_field('price', $featured_car->ID);
+    $on_sale = get_field('on_sale', $featured_car->ID);
+    $sale_price = get_field('sale_price', $featured_car->ID);
+    $main_photo = get_field('main_photo', $featured_car->ID) ?: get_the_post_thumbnail_url($featured_car->ID, 'large');
     ?>
     <section class="featured-car bg-gray-100 py-8">
         <div class="max-w-5xl mx-auto px-4">
@@ -24,7 +23,7 @@ if ($featured_car):
                         <?php if ($on_sale): ?>
                             <span class="text-sm bg-red-500 text-white px-2 py-1 rounded mr-2">SALE</span>
                             <del class="text-gray-700">₱<?php echo number_format($price); ?></del>
-                            <span class="text-green font-bold text-lg ml-2">₱<?php echo number_format($sale_price); ?></span>
+                            <span class="font-bold text-lg ml-2">₱<?php echo number_format($sale_price); ?></span>
                         <?php else: ?>
                             <span class="text-gray-700 font-bold text-lg">₱<?php echo number_format($price); ?></span>
                         <?php endif; ?>
